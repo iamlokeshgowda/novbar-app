@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f1f5f8 !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+nav {
+  background: #fff;
+  box-shadow:  0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 24px;
+  font-weight: 700;
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  color:hsl(205, 78%, 60%);
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color:hsl(205, 86%, 17%);
+  transform: rotate(90deg);
+}
+.logo {
+  height: 40px;
+  margin: 0;
+  color: #1a17ef6b;
+}
+.links a {
+  color: #324d67;
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+  text-align: start;
+}
+.links a:hover {
+  background: hsl(205, 86%, 81%);
+  color: hsl(205, 78%, 60%);
+  padding-left: 1.5rem;
+}
+.social-icons {
+  display: none;
+}
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  padding-bottom: 1rem;
+}
+.show-container {
+  height: 10rem;
+}
+
+@media screen and (min-width: 800px) {
+.nav-center{
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+}
+
+.nav-header{
+  font-size: 32px;
+  font-weight: 700;
+}
+.nav-toggle{
+  display: none;
+}
+.links-container{
+  height: auto !important;
+}
+.links{
+  display: flex
+}
+
+.links a{
+  padding: 0;
+  margin: 0 0.5rem
+}
+
+.links a:hover{
+  padding: 0;
+  background: transparent; 
+}
+
+.social-icons{
+  display: flex;
+}
+
+.social-icons a{
+  margin: 0 0.5rem;
+  color: hsl(205, 78%, 60%);
+  transition: all 0.3s linear;
+}
+
+.social-icons a:hover{
+  color: hsl(205, 90%, 76%);
+}
+
+}
